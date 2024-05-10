@@ -1,5 +1,5 @@
 import select from "query-selector";
-import { DOMParser } from "xmldom";
+import { DOMParser } from "@xmldom/xmldom";
 
 function monkeyPatchQuerySelectors(obj) {
 	const proto = Object.getPrototypeOf(obj);
