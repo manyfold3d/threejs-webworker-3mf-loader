@@ -21,4 +21,9 @@
     "url": "https://github.com/manyfold3d/threejs-webworker-3mf-loader/issues"
   },
   "homepage": "https://github.com/manyfold3d/threejs-webworker-3mf-loader#readme",
+  "dependencies": {
+    "query-selector": "^2.0.0",
+    "three": "^0.164.1",
+    "xmldom": "^0.6.0"
+  }
 }
