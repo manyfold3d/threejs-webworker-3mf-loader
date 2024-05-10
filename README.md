@@ -8,7 +8,11 @@ This makes the loader usable in a Web Worker.
 
 ## Installation
 
-`npm install threejs-webworker-3mf-loader`
+`npm install https://github.com/manyfold3d/threejs-webworker-3mf-loader`
+
+or
+
+`yarn add https://github.com/manyfold3d/threejs-webworker-3mf-loader`
 
 ## Maintenance
 
