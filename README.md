@@ -14,6 +14,15 @@ or
 
 `yarn add https://github.com/manyfold3d/threejs-webworker-3mf-loader`
 
+## Usage
+
+```
+import { ThreeMFLoader } from 'threejs-webworker-3mf-loader'
+
+loader = new ThreeMFLoader()
+model = loader.load(path)
+```
+
 ## Maintenance
 
 This code will be updated occasionally with the 3MF loader code from upstream THREE.js, but I can't guarantee I'll notice. Feel free to open issues to remind me if it changes.
