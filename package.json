@@ -24,6 +24,6 @@
   "dependencies": {
     "query-selector": "^2.0.0",
     "three": "^0.164.1",
-    "xmldom": "^0.6.0"
+    "@xmldom/xmldom": "^0.8.1"
   }
 }
