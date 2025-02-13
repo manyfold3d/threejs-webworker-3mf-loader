@@ -1157,7 +1157,7 @@ class ThreeMFLoader extends Loader {
 						break;
 
 					default:
-						console.error(`THREE.3MFLoader: Unsupported resource type: ${resourceType}`);
+						console.error(`THREE.3MFLoader: Unsupported resource type: ${resourceType} (id ${resourceId})`);
 
 				}
 
