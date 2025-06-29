@@ -1,13 +1,23 @@
-import select from "query-selector";
 import { DOMParser } from "@xmldom/xmldom";
+
+function selectRecursive(tags, nodearray) {
+	if (tags.length === 0 || nodearray.length === 0) {
+		return nodearray;
+	}
+	var result = nodearray.map(function (element) {
+		return Array.from(element.getElementsByTagNameNS("*", tags[0]));
+	}).flat(1);
+
+	return selectRecursive(tags.slice(1), result)
+}
 
 function monkeyPatchQuerySelectors(obj) {
 	const proto = Object.getPrototypeOf(obj);
 	proto.querySelectorAll = function querySelectorAll(selector) {
-		return select(selector, this)
+		return selectRecursive(selector.split(/ +/), [this]);
 	}
 	proto.querySelector = function querySelector(selector) {
-		return select(selector, this)[0]
+		return selectRecursive(selector.split(/ +/), [this])[0]
 	}
 }
 
