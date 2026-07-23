@@ -1,6 +1,6 @@
 {
   "name": "threejs-webworker-3mf-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A fork of the official THREE.js 3MF loader that can be used in a Web Worker",
   "main": "src/index.js",
   "scripts": {
@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/manyfold3d/threejs-webworker-3mf-loader#readme",
   "dependencies": {
-    "three": "^0.164.1",
-    "@xmldom/xmldom": "^0.8.1"
+    "three": ">=0.164.1, <1",
+    "@xmldom/xmldom": ">=0.8.1, <1"
   }
 }
