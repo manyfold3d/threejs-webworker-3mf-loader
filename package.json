@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/manyfold3d/threejs-webworker-3mf-loader#readme",
   "dependencies": {
-    "three": ">=0.164.1, <1",
-    "@xmldom/xmldom": ">=0.8.1, <1"
+    "three": "0.x >=0.164.1",
+    "@xmldom/xmldom": "0.x >=0.8.1"
   }
 }
